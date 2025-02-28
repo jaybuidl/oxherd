@@ -110,7 +110,7 @@ const AddressTable = ({
   };
 
   return (
-    <div className="w-full bg-white rounded-md shadow">
+    <div className="w-full bg-background rounded-md shadow">
       <Table>
         <TableHeader>
           <TableRow>

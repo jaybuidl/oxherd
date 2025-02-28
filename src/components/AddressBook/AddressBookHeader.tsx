@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Search, Plus, Download, Upload } from "lucide-react";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 interface AddressBookHeaderProps {
   onSearch?: (searchTerm: string) => void;
@@ -31,8 +32,9 @@ const AddressBookHeader = ({
   return (
     <div className="w-full bg-background p-4 border-b">
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:justify-between">
-        <h1 className="text-2xl font-bold">Ethereum Address Book</h1>
-
+        <div className="flex items-center space-x-4">
+          <h1 className="text-2xl font-bold">Ethereum Address Book</h1>
+        </div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-4">
           <div className="relative w-full md:w-64">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -44,7 +46,7 @@ const AddressBookHeader = ({
               className="pl-8"
             />
           </div>
-
+          <ThemeToggle />
           <div className="flex space-x-2">
             <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
               <DialogTrigger asChild>

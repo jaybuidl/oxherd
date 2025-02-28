@@ -34,7 +34,7 @@ const DeleteConfirmDialog = ({
 
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
-      <AlertDialogContent className="bg-white">
+      <AlertDialogContent className="bg-background">
         <AlertDialogHeader>
           <AlertDialogTitle>Delete Address</AlertDialogTitle>
           <AlertDialogDescription>

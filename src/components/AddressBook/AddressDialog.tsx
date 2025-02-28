@@ -69,7 +69,7 @@ const AddressDialog = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-white sm:max-w-[500px]">
+      <DialogContent className="bg-background sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">
             {isEditing ? "Edit Address" : "Add New Address"}

@@ -116,7 +116,7 @@ const ImportDialog = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-white sm:max-w-[600px]">
+      <DialogContent className="bg-background sm:max-w-[600px]">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">
             Import Addresses
@@ -135,7 +135,7 @@ const ImportDialog = ({
             {importFormats.map((format) => (
               <div
                 key={format.id}
-                className="flex items-start space-x-3 rounded-md border p-3 hover:bg-slate-50"
+                className="flex items-start space-x-3 rounded-md border p-3 hover:bg-muted/50"
               >
                 <RadioGroupItem
                   value={format.id}
